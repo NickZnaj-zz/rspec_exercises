@@ -1,18 +1,20 @@
-require "spec.rb"
+require "card"
 
 
 describe Card do
 
-  it "" do
+  subject(:card) { Card.new(:King, :Hearts) }
 
+  it "Has a value" do
+    expect(card.value).to eq(:King)
   end
 
-  it "" do
-
+  it "Has a suit" do
+    expect(card.suit).to eq(:Hearts)
   end
 
-  it "" do
-
-  end
+  # it "" do
+  #
+  # end
 
 end
